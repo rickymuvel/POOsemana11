@@ -12,3 +12,5 @@ Hacer clic en Explorador de Servidores
 Ir a la parte izquierda, clic derecho sobre conexiones de datos, Agregar conexion, Elegimos Microsoft SQL Server, siguiente, escribimos "localhost" en nombre del servidor, y abajo Buscamos la base de datos Negocios2015
 
 
+LISTAR LOS PEDIDOS DE UN AÑO
+

@@ -90,6 +90,12 @@
     <Compile Include="frmClientesBusca.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmPedidosAño.Designer.vb">
+      <DependentUpon>frmPedidosAño.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPedidosAño.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmPedidosCliente.Designer.vb">
       <DependentUpon>frmPedidosCliente.vb</DependentUpon>
     </Compile>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmClientesBusca.resx">
       <DependentUpon>frmClientesBusca.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPedidosAño.resx">
+      <DependentUpon>frmPedidosAño.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPedidosCliente.resx">
       <DependentUpon>frmPedidosCliente.vb</DependentUpon>
