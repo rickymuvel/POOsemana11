@@ -1,0 +1,21 @@
+Create proc usp_PedidosCliente_LINQ
+@IdCliente varchar(5)
+As
+Begin
+	select * from Ventas.pedidoscabe
+	where IdCliente=@IdCliente
+End
+
+-- usp_PedidosCLiente_LINQ 'ANTON'
+
+CREATE PROC usp_PedidosAño_LINQ
+@Año INT
+as 
+begin
+	select * from ventas.pedidoscabe
+	where	year(FechaPedido)=@Año
+end
+
+usp_PedidosAño_LINQ 1997
+
+select distinct year(fechapedido) from ventas.pedidoscabe order by 1
