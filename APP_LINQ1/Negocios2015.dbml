@@ -55,4 +55,23 @@
       <Association Name="productos_pedidosdeta" Member="pedidosdeta" ThisKey="IdProducto" OtherKey="IdProducto" Type="pedidosdeta" />
     </Type>
   </Table>
+  <Function Name="dbo.usp_PedidosCliente_LINQ" Method="usp_PedidosCliente_LINQ">
+    <Parameter Name="IdCliente" Parameter="idCliente" Type="System.String" DbType="VarChar(5)" />
+    <ElementType Name="usp_PedidosCliente_LINQResult">
+      <Column Name="IdPedido" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IdCliente" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="IdEmpleado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FechaPedido" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FechaEntrega" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FechaEnvio" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EnvioPedido" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="CantidaPedido" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Destinatario" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="DirDestinatario" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="CiuDestinatario" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="RefDestnatario" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="DepDestinatario" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="PaiDestinatario" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+    </ElementType>
+  </Function>
 </Database>

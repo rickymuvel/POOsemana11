@@ -1,0 +1,14 @@
+Linq
+
+Vamos a crear un modelo de datos.
+
+Proyecto, agregar un nuevo elemento.
+Nos vamos a Datos y buscamos Clases de LINQ to SQL
+Le ponemos un nombre "Negocios2015"
+Agregar.
+
+MAPEAR LA BASE DE DATOS
+Hacer clic en Explorador de Servidores
+Ir a la parte izquierda, clic derecho sobre conexiones de datos, Agregar conexion, Elegimos Microsoft SQL Server, siguiente, escribimos "localhost" en nombre del servidor, y abajo Buscamos la base de datos Negocios2015
+
+

@@ -99,6 +99,12 @@ Partial Public Class Negocios2015DataContext
 			Return Me.GetTable(Of productos)
 		End Get
 	End Property
+	
+	<Global.System.Data.Linq.Mapping.FunctionAttribute(Name:="dbo.usp_PedidosCliente_LINQ")>  _
+	Public Function usp_PedidosCliente_LINQ(<Global.System.Data.Linq.Mapping.ParameterAttribute(Name:="IdCliente", DbType:="VarChar(5)")> ByVal idCliente As String) As ISingleResult(Of usp_PedidosCliente_LINQResult)
+		Dim result As IExecuteResult = Me.ExecuteMethodCall(Me, CType(MethodInfo.GetCurrentMethod,MethodInfo), idCliente)
+		Return CType(result.ReturnValue,ISingleResult(Of usp_PedidosCliente_LINQResult))
+	End Function
 End Class
 
 <Global.System.Data.Linq.Mapping.TableAttribute(Name:="Ventas.clientes")>  _
@@ -976,4 +982,209 @@ Partial Public Class productos
 			RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
 		End If
 	End Sub
+End Class
+
+Partial Public Class usp_PedidosCliente_LINQResult
+	
+	Private _IdPedido As Integer
+	
+	Private _IdCliente As String
+	
+	Private _IdEmpleado As System.Nullable(Of Integer)
+	
+	Private _FechaPedido As Date
+	
+	Private _FechaEntrega As System.Nullable(Of Date)
+	
+	Private _FechaEnvio As System.Nullable(Of Date)
+	
+	Private _EnvioPedido As System.Nullable(Of Char)
+	
+	Private _CantidaPedido As System.Nullable(Of Integer)
+	
+	Private _Destinatario As String
+	
+	Private _DirDestinatario As String
+	
+	Private _CiuDestinatario As String
+	
+	Private _RefDestnatario As String
+	
+	Private _DepDestinatario As String
+	
+	Private _PaiDestinatario As String
+	
+	Public Sub New()
+		MyBase.New
+	End Sub
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_IdPedido", DbType:="Int NOT NULL")>  _
+	Public Property IdPedido() As Integer
+		Get
+			Return Me._IdPedido
+		End Get
+		Set
+			If ((Me._IdPedido = value)  _
+						= false) Then
+				Me._IdPedido = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_IdCliente", DbType:="VarChar(5)")>  _
+	Public Property IdCliente() As String
+		Get
+			Return Me._IdCliente
+		End Get
+		Set
+			If (String.Equals(Me._IdCliente, value) = false) Then
+				Me._IdCliente = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_IdEmpleado", DbType:="Int")>  _
+	Public Property IdEmpleado() As System.Nullable(Of Integer)
+		Get
+			Return Me._IdEmpleado
+		End Get
+		Set
+			If (Me._IdEmpleado.Equals(value) = false) Then
+				Me._IdEmpleado = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FechaPedido", DbType:="DateTime NOT NULL")>  _
+	Public Property FechaPedido() As Date
+		Get
+			Return Me._FechaPedido
+		End Get
+		Set
+			If ((Me._FechaPedido = value)  _
+						= false) Then
+				Me._FechaPedido = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FechaEntrega", DbType:="DateTime")>  _
+	Public Property FechaEntrega() As System.Nullable(Of Date)
+		Get
+			Return Me._FechaEntrega
+		End Get
+		Set
+			If (Me._FechaEntrega.Equals(value) = false) Then
+				Me._FechaEntrega = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_FechaEnvio", DbType:="DateTime")>  _
+	Public Property FechaEnvio() As System.Nullable(Of Date)
+		Get
+			Return Me._FechaEnvio
+		End Get
+		Set
+			If (Me._FechaEnvio.Equals(value) = false) Then
+				Me._FechaEnvio = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_EnvioPedido", DbType:="Char(1)")>  _
+	Public Property EnvioPedido() As System.Nullable(Of Char)
+		Get
+			Return Me._EnvioPedido
+		End Get
+		Set
+			If (Me._EnvioPedido.Equals(value) = false) Then
+				Me._EnvioPedido = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CantidaPedido", DbType:="Int")>  _
+	Public Property CantidaPedido() As System.Nullable(Of Integer)
+		Get
+			Return Me._CantidaPedido
+		End Get
+		Set
+			If (Me._CantidaPedido.Equals(value) = false) Then
+				Me._CantidaPedido = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_Destinatario", DbType:="VarChar(40)")>  _
+	Public Property Destinatario() As String
+		Get
+			Return Me._Destinatario
+		End Get
+		Set
+			If (String.Equals(Me._Destinatario, value) = false) Then
+				Me._Destinatario = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DirDestinatario", DbType:="VarChar(60)")>  _
+	Public Property DirDestinatario() As String
+		Get
+			Return Me._DirDestinatario
+		End Get
+		Set
+			If (String.Equals(Me._DirDestinatario, value) = false) Then
+				Me._DirDestinatario = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_CiuDestinatario", DbType:="VarChar(60)")>  _
+	Public Property CiuDestinatario() As String
+		Get
+			Return Me._CiuDestinatario
+		End Get
+		Set
+			If (String.Equals(Me._CiuDestinatario, value) = false) Then
+				Me._CiuDestinatario = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_RefDestnatario", DbType:="VarChar(60)")>  _
+	Public Property RefDestnatario() As String
+		Get
+			Return Me._RefDestnatario
+		End Get
+		Set
+			If (String.Equals(Me._RefDestnatario, value) = false) Then
+				Me._RefDestnatario = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_DepDestinatario", DbType:="VarChar(60)")>  _
+	Public Property DepDestinatario() As String
+		Get
+			Return Me._DepDestinatario
+		End Get
+		Set
+			If (String.Equals(Me._DepDestinatario, value) = false) Then
+				Me._DepDestinatario = value
+			End If
+		End Set
+	End Property
+	
+	<Global.System.Data.Linq.Mapping.ColumnAttribute(Storage:="_PaiDestinatario", DbType:="VarChar(60)")>  _
+	Public Property PaiDestinatario() As String
+		Get
+			Return Me._PaiDestinatario
+		End Get
+		Set
+			If (String.Equals(Me._PaiDestinatario, value) = false) Then
+				Me._PaiDestinatario = value
+			End If
+		End Set
+	End Property
 End Class

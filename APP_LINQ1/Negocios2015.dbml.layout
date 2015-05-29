@@ -14,7 +14,7 @@
         <elementListCompartment Id="a17d5e3d-5b97-418e-8b65-923601c99003" absoluteBounds="5.765, 1.085, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(2.5 : 1.03125); (5.75 : 1.03125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.5 : 1.03125); (5.75 : 1.03125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/Negocios2015DataContext/clientes/clientes_pedidoscabe" />
       <nodes>
         <classShapeMoniker Id="7ff8a835-2457-4c86-8a51-3b8ecef3215f" />
@@ -27,7 +27,7 @@
         <elementListCompartment Id="a0ab9bae-51db-4220-a3fa-7017923c80da" absoluteBounds="3.39, 3.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(5.75 : 3.56330485026042); (5.375 : 3.56330485026042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.75 : 3.56330485026042); (5.375 : 3.56330485026042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/Negocios2015DataContext/pedidoscabe/pedidoscabe_pedidosdeta" />
       <nodes>
         <classShapeMoniker Id="6faaab1d-57b3-4d90-a818-53e1c6c5a7a9" />
@@ -40,7 +40,7 @@
         <elementListCompartment Id="f684fbf9-b481-41d7-836a-898a857c1ce6" absoluteBounds="0.64000000000000012, 3.585, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(2.625 : 3.94794840494792); (3.375 : 3.94794840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.625 : 3.94794840494792); (3.375 : 3.94794840494792)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/Negocios2015DataContext/productos/productos_pedidosdeta" />
       <nodes>
         <classShapeMoniker Id="1599ead1-a2de-4786-8387-7a0bf7721927" />
